@@ -21,8 +21,29 @@
             </div>
             <div class="collapse navbar-collapse" id="xilancer_menu">
                 <ul class="navbar-nav">
-                    {!! render_frontend_menu($primary_menu) !!}
+                    
+                        <li class=" current-menu-item "> 
+                            <a href="/">Home</a>
+                    </li>
+                        <li > 
+                            <a href="/jobs">Jobs</a>
+                    </li>
+                        <li > 
+                            <a href="/talents">Talents</a>
+                    </li>
+                        <li > 
+                            <a href="https://rightfreelancer.com/packages/all">Packages</a>
+                    </li>
+                        <li > 
+                            <a href="/projects">Projects</a>
+                    </li>
+                        <li > 
+                            <a href="/how-it-works">How It Works</a>
+                    </li>
                 </ul>
+                <!-- <ul class="navbar-nav">
+                    {!! render_frontend_menu($primary_menu) !!}
+                </ul> -->
             </div>
             <x-frontend.user-menu />
         </div>

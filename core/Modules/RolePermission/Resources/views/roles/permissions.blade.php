@@ -8,7 +8,7 @@
             --bs-dropdown-item-padding-x: 1rem;
             --bs-dropdown-header-color: #6c757d;
             --heading-font: "Poppins", sans-serif;
-            --main-color-one: #696CFF;
+            --main-color-one: #309400;
             --white: #fff;
         }
 

@@ -35,6 +35,7 @@ class AdminManageController extends Controller
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
                 'image' => $request->image,
+                'role' => $request->role,
             ]);
 
             $admin->assignRole($request->role);
@@ -64,6 +65,7 @@ class AdminManageController extends Controller
                 'username' => $request->username,
                 'email' => $request->email,
                 'image' => $request->image,
+                'role' => $request->role,
             ]);
 
             DB::table('model_has_roles')->where('model_id',$admin->id)->delete();

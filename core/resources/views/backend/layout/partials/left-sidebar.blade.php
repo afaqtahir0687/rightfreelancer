@@ -20,7 +20,6 @@
                             class="fa-solid fa-chart-simple"></i>{{ __('Dashboard') }}</a>
                 </li>
 
-                @if (auth()->guard('admin')->user()->role == 1)
                     <li
                         class="dashboard__bottom__list__item has-children @if (request()->is('admin/manage*') || request()->is('admin/role*')) active open show @endif">
                         <a href="javascript:void(0)"> <i class="fa-solid fa-user"></i> {{ __('Admin Role Manage') }}
@@ -37,8 +36,25 @@
                             </li>
                         </ul>
                     </li>
-                @endif
 
+                    <!-- @if (auth()->guard('admin')->check() && auth()->guard('admin')->user()->role === 'super admin')
+                        <li class="dashboard__bottom__list__item has-children @if (request()->is('admin/manage*') || request()->is('admin/role*')) active open show @endif">
+                            <a href="javascript:void(0)">
+                                <i class="fa-solid fa-user"></i> {{ __('Admin Role Manage') }}
+                            </a>
+                            <ul class="submenu">
+                                <li class="dashboard__bottom__list__item @if (request()->routeIs(['admin.create'])) selected @endif">
+                                    <a href="{{ route('admin.create') }}"> {{ __('Add New Admin') }} </a>
+                                </li>
+                                <li class="dashboard__bottom__list__item @if (request()->routeIs(['admin.all'])) selected @endif">
+                                    <a href="{{ route('admin.all') }}"> {{ __('All Admins') }} </a>
+                                </li>
+                                <li class="dashboard__bottom__list__item @if (request()->routeIs(['admin.role.create'])) selected @endif">
+                                    <a href="{{ route('admin.role.create') }}"> {{ __('All Roles') }} </a>
+                                </li>
+                            </ul>
+                        </li>
+                    @endif -->
                 <li
                     class="dashboard__bottom__list__item has-children @if (request()->is('admin/user*')) active open show @endif">
                     <a href="javascript:void(0)"> <i class="fa-solid fa-user"></i> {{ __('User Manage') }} </a>

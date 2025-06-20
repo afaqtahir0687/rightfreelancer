@@ -17,7 +17,7 @@
             </form>
         </div>
         <div class="popup-contents-btn flex-btn justify-content-end profile-border-top">
-            <a href="javascript:void(0)" class="btn-profile btn-outline-gray btn-hover-danger popup-close"> <i class="las la-arrow-left"></i>{{ __('Cancel') }}</a>
+            <a href="javascript:void(0)" class="btn-profile btn-outline-gray btn-hover-danger popup-close"> <i class="fa-solid fa-xmark"></i>  {{ __('Cancel') }}</a>
             <a href="javascript:void(0)" class="btn-profile btn-bg-1 add_education">{{ __('Save') }}</a>
         </div>
     </div>

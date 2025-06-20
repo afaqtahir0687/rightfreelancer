@@ -58,7 +58,7 @@
                 </div>
             </div>
             <div class="popup-contents-btn flex-btn profile-border-top justify-content-end">
-                <a href="javascript:void(0)" class="btn-profile btn-outline-gray btn-hover-danger color-one popup-close"> <i class="las la-arrow-left"></i> {{__('Cancel')}} </a>
+                <a href="javascript:void(0)" class="btn-profile btn-outline-gray btn-hover-danger color-one popup-close"> <i class="fa-solid fa-xmark"></i>  {{__('Cancel')}} </a>
                 <button type="submit" class="btn-profile btn-bg-1">{{ __('Update Profile') }}</button>
             </div>
         </div>
