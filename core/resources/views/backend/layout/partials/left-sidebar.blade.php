@@ -363,7 +363,6 @@
                     </ul>
                 </li>
 
-                @if (auth()->guard('admin')->user()->role == 1)
                     <li
                         class="dashboard__bottom__list__item has-children @if (request()->is('admin/transaction*')) active open show @endif">
                         <a href="javascript:void(0)"> <i class="fa-solid fa-list"></i>{{ __('Transaction Manage') }}
@@ -384,10 +383,8 @@
                                 <a href="{{ route('admin.withdraw.fee.settings') }}">
                                     {{ __('Withdraw Fee Settings') }} </a>
                             </li>
-
                         </ul>
                     </li>
-                @endif
 
                 <li
                     class="dashboard__bottom__list__item has-children @if (request()->is('admin/order*')) active open show @endif">
